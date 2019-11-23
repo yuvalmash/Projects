@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="flex-container">
+        <div class="box"><h1>Welcome to the show </br> "How looney are you?"</h1>
+            <div class="question-text">Please answer the five questions before you, </br> To gain points, you have to choose only the right answer. good luck!!
+            </div>
+            <a href="#section1" type="button" class="btn" style="float: inherit">get started!</a>
+        </div> 
+        <form name="quiz">
+
+        <div class="box" id="section1"><h1>First question - Bugs Bunny</h1>
+            <div class="question-text">When did Bugs Bunny first appear?
+
+            </div>
+                <img class="gifs" src="http://giphygifs.s3.amazonaws.com/media/QJvwBSGaoc4eI/giphy.gif" alt="animated" \>
+                <div class="radio-q1">
+                    <input type="radio" name="q1" value="First"> 1940<br>
+                    <input type="radio" name="q1" value="Second"> 1999<br>
+                    <input type="radio" name="q1" value="Third"> 1967  <br>
+                    <input type="radio" name="q1" value="Fourth"> No one knows 
+                </div>
+            <a href="#section2" type="button" class="btn">move to the next question!!</a>
+        </div>
+        <div class="box" id="section2"><h1>Second question - Taz the Tasmanian Devil</h1>
+            <div class="question-text">What is the most correct sentence about Taz?</div>
+            <img class="gifs" src="https://media1.giphy.com/media/f6P20EYU672FdHElfJ/giphy.gif?cid=790b7611b6e23beb339a59b31d4fb40bcbb7766b4d8373b1&rid=giphy.gif" alt="animated" \>
+            <div class="container-drop">
+                    <select id="q2">
+                    <option value="First">Taz lives in the Galapagos Islands inside a volcano</option>
+                    <option value="Second">Taz's sworn enemy is Elmer Fudd</option>
+                    <option value="Third">Taz lives in Tasmania and he hates water</option>
+                    <option value="Fourth">Taz was once a man who cast a spell on him</option>
+                    </select>
+            <a href="#section3" type="button" class="btn">move to the next question!</a>
+            </div>
+        </div>
+        <div class="box" id="section3" ><h2 style="margin-bottom:0;">Third question - Sylvester the Cat</h2>
+            <div class="question-text">Who is Sylvester chasing after?  Click on the right characters (you can click more than once)
+                </div>
+            <img class="gifs" src="https://media2.giphy.com/media/LWZvjVmnHKWYM/giphy.gif?cid=790b761129a4e143ddb59b61982d74690c9d8a8f46010f07&rid=giphy.gif" alt="animated" \>
+            
+
+            <div class="checkcon">
+                <input id="checked1" type="checkbox" class="checked" value="checked">Tweety
+                <label for="checked1" class="css-label1 css-label"></label>
+                <input id="checked2" type="checkbox" class=" checked" value="checked">Speedy Gonzales
+                <label for="checked2" class="css-label2 css-label"></label>
+                <input id="checked3" type="checkbox" class=" checked" value="checked">Road Runner
+                <label for="checked3" class="css-label3 css-label"></label>
+                <input id="checked4" type="checkbox" class=" checked" value="checked">Pepé Le Pew
+                <label for="checked4" class="css-label4 css-label"></label>
+            </div>
+            <a href="#section4" type="button" class="btn">move to the next question!</a>
+        </div>
+        <div class="box" id="section4"><h2>Fourth question - The fastest of all times</h2>
+            <div class="question-text">Rate the speed of the characters in all episodes</div>
+            <div class="slidecontainer">
+                <div class="slidersSpace">
+                <input type="range" min="1" max="4" value="1" class="slider" oninput="changeVal()" id="myRange1">
+                Value: <span id="bar1"></span>
+                </div>
+                <div class="slidersSpace">
+                <input type="range" min="1" max="4" value="1" class="slider slider1" oninput="changeVal()" id="myRange2">
+                Value: <span id="bar2"></span>
+                </div>
+                <div class="slidersSpace">
+                <input type="range" min="1" max="4" value="1" class="slider slider2" oninput="changeVal()" id="myRange3">
+                Value: <span id="bar3"></span>
+                </div>
+                <div class="slidersSpace">
+                <input type="range" min="1" max="4" value="1" class="slider slider3" oninput="changeVal()" id="myRange4">
+                Value: <span id="bar4"></span>
+                </div>                             
+            </div>
+              <a href="#section5" type="button" class="btn" style="transform: translateY(-91px)">move to the next question!</a>
+        </div>
+        <div class="box" id="section5" ><h2 style="transform: translateX(100px); margin-bottom:0">Fifth question - Space Jam</h2>
+            <div class="question-text">What year did the movie Spice Jam (With Michael Jordan and the Lonnie Tunes) come out?
+            </div>
+            <img class="gifs" src="https://media.giphy.com/media/l0HlHZ129bgn4v4t2/giphy.gif" alt="animated" \>
+
+            
+            <div style="padding-top: 60px;">
+                 between 1994 and 1998: <input id="section5input" type="number" name="quantity" min="1994" max="1998">
+            <a href="#section6"  type="button" class="btn" onclick="check();">Calculate the answers!</a>
+            </div>
+        </div>
+        <div class="box" id="section6"><h1>fin!</h1>
+            <div class="question-text"><span id="first"> </span>  <span id="correct"> </span > <span id="last"></span></div>
+
+            
+            <img id="padd" style="border-radius:10% ; padding-top: 120px" class="gifs" src="https://media1.tenor.com/images/38f44c3775cee759d2171756e977cfe2/tenor.gif?itemid=10849136" alt="animated" \>
+
+            <div class="question-text">
+
+            </div>
+        
+
+    </form> 
+
+</div>
+<script src="ass2.JS"></script>
+</body>
+
+</html>

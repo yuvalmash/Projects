@@ -1,0 +1,292 @@
+html {
+    font-family: 'Gloria Hallelujah', cursive;
+    background-image: url(https://i.pinimg.com/736x/1f/4a/d9/1f4ad9b6fef3e5eb47d3bc7b61549e08.jpg);
+    scroll-behavior: smooth;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box {
+  color: yellow;
+  width: 1000px;
+  height: 100vh;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  background-image: url(https://i.imgflip.com/368i2u.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.question-text  {
+    display: block;
+    color: yellowgreen;
+    text-align: center;
+    font-size: 40px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    float: right;
+  }
+
+/* dropdown */
+
+select { 
+    appearance: none; 
+    outline: 0; 
+    background: #b0523e; 
+    background-image: none; 
+    width: 78%; 
+    height: 63%; 
+    color: black; 
+    cursor: pointer; 
+    border:1px solid black; 
+    border-radius:3px; 
+    font-size: 20px;
+} 
+
+.select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+  }
+.container-drop { 
+    display: flex; 
+    flex-direction: row;
+    overflow: hidden; 
+    border-radius: .25em; 
+    justify-content:space-between;  
+    margin-left: 25px;
+} 
+/* end of dropdown */
+
+/* radio */
+  
+  .radio-q1  {
+    font-size: 50px;
+    font-weight: 200;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}  
+/* end of radio */
+
+
+/* checkbox */
+
+.css-label{
+    padding-left: 20px;
+    display: flex;
+    width: 30px;
+    height: 70px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/41x8JsPOsML._SY450_.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E9EEF4;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.css-label2   {
+    background-image: url(https://vignette.wikia.nocookie.net/animaniacs/images/8/83/Speedy_Gonzalez_%28Looney_Tunes%29.jpg/revision/latest?cb=20140525224621);
+    width: 35px;
+}
+.css-label3   {
+    background-image: url(https://pixy.org/src/50/505865.jpg);
+    width: 71px;
+}
+.css-label4   {
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Pep%C3%A9_Le_Pew.svg/1200px-Pep%C3%A9_Le_Pew.svg.png);
+    width:48px;
+}
+
+/* .css-label2{
+    padding-left: 20px;
+    display: flex;
+    width: 50%;
+    height: 70px;
+    background-image: url(https://vignette.wikia.nocookie.net/animaniacs/images/8/83/Speedy_Gonzalez_%28Looney_Tunes%29.jpg/revision/latest?cb=20140525224621);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E9EEF4;
+    background-size: contain;
+    cursor: pointer;
+} */
+
+.checkcon input   {
+    display: none;
+} 
+
+.checkcon    {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.checkcon [type=checkbox]:checked + label{
+    border: solid purple 3px;
+    opacity: 16.4;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* end of checkbox */
+
+/* slider */
+.slidecontainer {
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    padding-top: 40px;
+  }
+  
+  .slider {
+    display: inline;
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+  }
+  
+  .slider:hover {
+    opacity: 0.7;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background-image:url(http://giphygifs.s3.amazonaws.com/media/DFD8Iw6Tnlyta/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 60%;
+    
+  }
+
+  .slider1::-webkit-slider-thumb {
+    background-image:url(https://media1.tenor.com/images/0b2b62ad7fd464ced59219c31e41a036/tenor.gif?itemid=5055539);
+  }
+
+  .slider2::-webkit-slider-thumb {
+    background-image:url(https://media.giphy.com/media/bFcn2gtTxuMfu/giphy.gif);
+  }
+
+  .slider3::-webkit-slider-thumb {
+    background-image:url(https://media1.tenor.com/images/5763a4e2a64a5ddd9e04c4f9baf08ef8/tenor.gif?itemid=8071697);
+  }
+  
+  .slidersSpace {
+    padding-bottom: 20px;
+  }
+  /* .slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('http://giphygifs.s3.amazonaws.com/media/DFD8Iw6Tnlyta/giphy.gif');
+    cursor: pointer;
+  } */
+   /* end slider */
+
+
+input[type=number]{
+    width: 175px;
+    height: 70px;
+    font-size: 70px;
+} 
+
+
+.gifs   {
+    height: 180px;
+    padding-top:20px;
+    border-radius: 36%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .checkcon .checkmark  {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(https://images1.calcalist.co.il/PicServer3/2019/07/14/920446/8_l.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 30%;
+}  */
+
+/* .checkcon input:checked + .checkbox{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Tweety.svg/1200px-Tweety.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: green 4px solid;
+} */
+
+
+/* .css-label2{
+    padding-left: 20px;
+    display: flex;
+    width: 50%;
+    height: 70px;
+    background-image: url(https://vignette.wikia.nocookie.net/animaniacs/images/8/83/Speedy_Gonzalez_%28Looney_Tunes%29.jpg/revision/latest?cb=20140525224621);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E9EEF4;
+    background-size: contain;
+    cursor: pointer;
+} */
